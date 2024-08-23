@@ -33,7 +33,7 @@ entry2.grid(row=0, column=2, sticky="w")
 label = tk.Label(root, text="Result: ")
 label.grid(row=2, column=0, columnspan=3, sticky="ew")
 
-# Create a button
+# Calculate function
 def calculate():
     num1 = int(entry.get())
     num2 = int(entry2.get())
@@ -48,6 +48,7 @@ def calculate():
         result = num1 / num2
     label.config(text="Result: " + str(result))
 
+# Create a button
 button = tk.Button(root, text="Calculate", command=calculate)
 button.grid(row=1, column=0, columnspan=3, sticky="ew")
 
