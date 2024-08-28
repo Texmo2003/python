@@ -6,6 +6,8 @@ import random
 # Create window
 root = tk.Tk()
 
+root.title("Quote Generator")
+
 # Set windowsize
 root.geometry("400x400")
 
